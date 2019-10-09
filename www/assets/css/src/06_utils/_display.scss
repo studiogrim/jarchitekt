@@ -1,0 +1,153 @@
+.u-d{
+  &-n{
+    display: none !important;
+  }
+  &-b{
+    display: block !important;
+  }
+  &-i{
+    display: inline !important;
+  }
+  &-ib{
+    display: inline-block !important;
+  }
+  &-f{
+    display: flex !important;
+  }
+  &-if{
+    display: inline-flex !important;
+  }
+
+  @media (min-width: $screen-xs){
+    &-xs{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+  @media (min-width: $screen-sm){
+    &-sm{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+  @media (min-width: $screen-md){
+    &-md{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+  @media (min-width: $screen-lg){
+    &-lg{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+  @media (min-width: $screen-xl){
+    &-xl{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+  @media (min-width: $screen-xxl){
+    &-xxl{
+      &-n{
+        display: none !important;
+      }
+      &-b{
+        display: block !important;
+      }
+      &-i{
+        display: inline !important;
+      }
+      &-ib{
+        display: inline-block !important;
+      }
+      &-f{
+        display: flex !important;
+      }
+      &-if{
+        display: inline-flex !important;
+      }
+    }
+  }
+}

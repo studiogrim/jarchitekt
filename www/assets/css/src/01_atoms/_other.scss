@@ -1,0 +1,20 @@
+.a-map{
+  height: 29rem;
+  margin-top: 4rem;
+  max-height: 70vh;
+  background: $color-gray-1;
+  @media (min-width: $screen-lg){
+    margin-top: 1.5rem;
+  }
+  @media (orientation: portrait){
+    max-height: 50vw;
+  }
+}
+
+.a-separator{
+  display: inline-block;
+  margin: .5rem .5rem .2rem;
+  width: .375rem;
+  height: .375rem;
+  background: $color-primary;
+}

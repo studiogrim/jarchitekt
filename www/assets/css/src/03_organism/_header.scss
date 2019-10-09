@@ -1,0 +1,23 @@
+.o-header{
+  display: block;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .a-logo{
+    padding-top: .25rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+}

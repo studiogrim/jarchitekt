@@ -1,0 +1,30 @@
+@media (min-width: $screen-md){
+  .u-landing-section{
+    opacity: 0;
+    will-change: opacity;
+    transition: .4s opacity;
+    &.landed{
+      opacity: 1;
+    }
+  }
+  .u-landing{
+    transition: .6s transform ease, .5s opacity ease;
+    will-change: transform, opacity;
+    transform: translate3d(0, 6rem, 0);
+    opacity: 0;
+
+    &.landed{
+      transform: translate3d(0,0,0);
+      opacity: 1;
+    }
+  }
+
+  .u-delay{
+    $delay: .15s;
+    @for $i from 1 through 9{
+      &-#{$i}{
+        transition-delay: ($i * $delay);
+      }
+    }
+  }
+}

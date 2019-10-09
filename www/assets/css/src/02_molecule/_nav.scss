@@ -1,0 +1,57 @@
+.m-nav{
+  @include absolute-centred;
+  margin: 0;
+  width: 100%;
+  will-change: top, opacity;
+  padding: 5rem 20% 5rem 5%;
+  height: 100vh;
+  align-items: center;
+  transition: .5s top ease;
+  display: none;
+  background: $nav-bg;
+  z-index: 10;
+  ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    li{
+      display: flex;
+      align-items: stretch;
+      text-align: right;
+      justify-content: flex-end;
+    }
+  }
+
+  &.opened{
+    display: flex;
+
+  }
+
+  &+.button{
+    .cross{
+      position: absolute;
+      margin: auto;
+      top: .125rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+    }
+    .cross, .bars{
+      transition: .3s opacity ease;
+    }
+  }
+  @media (min-width: $screen-lg){
+    padding: 12rem 13% 11rem;
+  }
+}
+
+
+.m-footer-nav{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

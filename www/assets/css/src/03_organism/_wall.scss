@@ -1,0 +1,115 @@
+.o-wall{
+  display: grid;
+  height: 49vw;
+  min-height: 99vh;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  grid-template-areas: '. . . p2 p2 . .'
+  '. . . p2 p2 p3 p3'
+  'p1 p1 p1 p2 p2 p3 p3'
+  'p1 p1 p1 logo p6 p6 .'
+  '. p4 p5 p5 p6 p6 .'
+  '. p4 p5 p5 more more .'
+  '. . p5 p5 more more .';
+  grid-template-columns: 3% 27% 9% 22.5% 9% 26.5% 3%;
+  grid-template-rows: 5.8% 3.8% 27.2% 27% 23.8% 6.3% 5.5%;
+
+  width: 100%;
+  margin: auto;
+  max-width: 177vh;
+  .wall-item{
+    position: relative;
+    &.item{
+      &-p1{
+        grid-area: p1;
+      }
+      &-p2{
+        grid-area: p2;
+      }
+      &-p3{
+        grid-area: p3;
+      }
+      &-p4{
+        grid-area: p4;
+      }
+      &-p5{
+        grid-area: p5;
+      }
+      &-p6{
+        grid-area: p6;
+      }
+      &-logo{
+        grid-area: logo;
+        img{
+          @include absolute-centred;
+          height: 65%;
+        }
+      }
+      &-more{
+        grid-area: more;
+        padding: .25rem 0 0;
+      }
+    }
+    .m-tile{
+      @include absolute-centred;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: $screen-md){
+    padding-bottom: 5rem;
+    .wall-item.item-more{
+      padding: 1rem 0 0 1rem;
+    }
+  }
+  @media (min-width: $screen-lg){
+    .wall-item.item-more{
+      padding: .5rem 0 0 1rem;
+    }
+  }
+  @media (min-width: $screen-lg){
+    .wall-item.item-more{
+      padding: .5rem 0 0 2rem;
+    }
+  }
+  @media (min-width: $screen-xxl){
+    max-width: 175vh;
+  }
+
+  @media (orientation: portrait){
+    min-height: 90vh;
+    padding-top: 10vh;
+    grid-template-areas: '. . . p1 p1 . .'
+    '. p2 p2 p1 p1 . .'
+    'p4 p4 p4 p1 p1 . .'
+    'p4 p4 p4 logo p3 p3 p3'
+    '. . p6 p6 p3 p3 p3'
+    '. . p6 p6 p5 p5 .'
+    '. . p6 p6 more more more';
+    grid-template-rows: 10% 22% 5% 19% 5% 24% 12%;
+    grid-template-columns: 3% 2% 30% 30% 30% 2% 3%;
+    @media (max-width: $screen-sm){
+      min-height: 86vh;
+      padding-top: 12vh;
+      grid-template-rows: 12% 23% 5% 19% 5% 24% 12%;
+      grid-template-columns: 0 0 36% 28% 36% 0 0;
+    }
+  }
+
+  @media (max-width: $screen-md - 1){
+    .m-tile{
+      .title{
+        display: none;
+      }
+    }
+  }
+}
+
+.o-masonry{
+  display: block;
+  .col, [class*="col-"]{
+    display: block;
+    max-height: unset;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "jarchitekt",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "grim digital studio",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css": "^0.5.4",
+    "grunt-express": "^1.4.1",
+    "grunt-parallel": "^0.5.1",
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-less": "^0.1.7",
+    "grunt-parallel": "^0.5.1"
+  },
+  "description": ""
+}

@@ -1,0 +1,40 @@
+.a-cookies-bar{
+  position: fixed;
+  height: auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: $color-secondary;
+  color: $color-white;
+  padding: .5rem 0;
+  font-size: .75rem;
+  transform: translate3d(0,0,0);
+  transition: .5s transform ease;
+  a{
+    color: $color-primary;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  button{
+    margin-top: .5rem;
+    min-width: 4rem;
+    background: $color-primary;
+    padding: .375rem;
+    border-radius: .25rem;
+  }
+
+  &.hidden{
+    transform: translate3d(0,110%,0);
+  }
+
+  @media (min-width: $screen-lg){
+    button{
+      margin-top: 0;
+    }
+  }
+}

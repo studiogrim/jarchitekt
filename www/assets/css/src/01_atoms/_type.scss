@@ -1,0 +1,17 @@
+.a-note{
+  padding-left: 2rem;
+  margin-top: 1rem;
+  font-style: italic;
+  background: url(../img/note-white.png) no-repeat top 0.5rem left 0.75rem/6px auto;
+  &+p{
+    margin-top: 1rem
+  }
+  @media (min-width: $screen-sm){
+    padding-left: 4rem;
+    background: url(../img/note-white.png) no-repeat top .5rem left 2.25rem/6px auto;
+  }
+}
+
+.a-bigger-text{
+  font-style: italic;
+}

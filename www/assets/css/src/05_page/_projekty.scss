@@ -1,0 +1,24 @@
+.p-projekty{
+  .o-masonry{
+    .grid-item{
+      &:nth-child(1){
+        @media (min-width: $screen-lg){
+          margin-top: 2rem;
+        }
+      }
+      &:nth-child(2){
+        @media (min-width: $screen-sm){
+          margin-top: 3rem;
+        }
+        @media (min-width: $screen-lg){
+          margin-top: 0;
+        }
+      }
+      &:nth-child(3){
+        @media (min-width: $screen-lg){
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

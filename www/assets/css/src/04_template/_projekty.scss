@@ -1,0 +1,35 @@
+.t-projekty{
+  .project-title{
+    align-self: flex-start;
+
+    h4{
+      margin-top: 2.25rem;
+
+      &+p{
+        margin-top: .5rem;
+      }
+    }
+  }
+  .project-content{
+    padding: 0 .25rem;
+    h2{
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+    .col, [class*="col-"]{
+      justify-content: flex-start;
+    }
+    img{
+      height: auto;
+      width: 100%;
+      display: block;
+    }
+    @media (min-width: $screen-md){
+      padding: 0 3rem 3rem;
+    }
+    @media (min-width: $screen-lg){
+      padding: 1.5rem 4rem 0;
+    }
+  }
+
+}

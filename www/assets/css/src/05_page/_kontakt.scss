@@ -1,0 +1,28 @@
+.p-kontakt{
+  main{
+    p{
+      line-height: 1.5;
+    }
+  }
+  .address{
+    &+.address{
+      margin-top: 3rem;
+    }
+  }
+
+  @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
+    .address{
+      width: 50%;
+      float: left;
+      &+.address{
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg){
+    main{
+      padding-top: 9%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/** FONTS **/
+
+/*
+font-family: 'Fenomen Sans Book'
+font-family: 'Fenomen Sans Light'
+font-family: 'Fenomen Sans'
+font-family: 'Fenomen Sans Thin'
+*/
+
+$font-body:        'Fenomen Sans Thin', sans-serif;
+$font-heading:     'Fenomen Sans Book', sans-serif;
+$font-medium:      $font-heading;
+
+/** COLORS **/
+
+$color-orange:                #c07f69;
+$color-white:                 #fff;
+$color-black:                 #141414;
+$color-gray-1:                #555;
+$color-gray-2:                $color-gray-1;
+$color-gray-3:                #eee;
+
+$color-primary:               $color-orange;
+$color-secondary:             $color-white;
+$color-default:               $color-white;
+$color-bg:                    $color-black;
+
+$nav-bg:                      transparentize($color-bg, .15);
+
+
+/** SCREEN BREAKPOINTS **/
+
+$screen-xs:     350px;
+$screen-sm:     568px;
+$screen-md:     768px;
+$screen-lg:    1024px;
+$screen-xl:    1350px;
+$screen-xxl:   1680px;
+
+$screen-3xl:  2000px;
+
+/** GRID **/
+
+$grid-gutter-width:   1rem;
+$grid-columns:       12;
+$grid-max-offset:    ($grid-columns - 1);
+
+
+/** EASING **/
+
+$ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$ease-in-cubic:  cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-cubic:     cubic-bezier(0.645, 0.045, 0.355, 1.000);

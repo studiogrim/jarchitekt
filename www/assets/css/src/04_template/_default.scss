@@ -1,0 +1,77 @@
+.t-default{
+  header, main, footer{
+    position: relative;
+    &:after{
+      right: .75rem;
+      display: block;
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+    @media (min-width: $screen-sm){
+      &:after{
+        right: 2rem;
+      }
+    }
+  }
+  header{
+    &:after{
+      top: 1px;
+      width: 28px;
+      height: 11rem;
+      background: url("../img/j-top.png") no-repeat right bottom;
+      background-size: 28px auto;
+    }
+  }
+  main{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    min-height: calc(99vh - 5rem);
+    &:after{
+      top: 11rem;
+      bottom: 60px;
+      width: 28px;
+      background: url("../img/j-middle.png") repeat-y right center;
+      background-size: 28px auto;
+    }
+  }
+  footer{
+    min-height: 5rem;
+    &:after{
+      bottom: 60px;
+      width: 80px;
+      height: 100%;
+      background: url("../img/j-bottom.png") no-repeat right top;
+      background-size: 80px auto;
+    }
+  }
+
+  .container{
+    padding-right: 15%;
+    @media (min-width: $screen-sm){
+      padding-right: 12%;
+    }
+    @media (min-width: $screen-md){
+      padding-right: 7%;
+    }
+  }
+
+  p{
+    strong{
+      color: $color-primary;
+    }
+  }
+
+  @media (min-width: $screen-lg){
+    .container{
+      padding-right: $grid-gutter-width/2;
+    }
+  }
+  @media (min-width: $screen-xxl){
+    header, main, footer{
+      &:after{
+        right: 2.5rem;
+      }
+    }
+  }
+}

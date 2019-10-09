@@ -1,0 +1,43 @@
+.u{
+  &-ai-fs{
+    align-items: flex-start;
+  }
+  &-ai-fe{
+    align-items: flex-end;
+  }
+  &-ai-c{
+    align-items: center;
+  }
+
+  &-jc-fe{
+    justify-content: flex-end !important;
+  }
+  &-jc-fs{
+    justify-content: flex-start !important;
+  }
+
+
+  &-order{
+    @media (min-width: $screen-sm){
+      &-sm{
+        &-1{
+          order: 1;
+        }
+      }
+    }
+    @media (min-width: $screen-md){
+      &-md{
+        &-1{
+          order: 1;
+        }
+      }
+    }
+    @media (min-width: $screen-lg){
+      &-lg{
+        &-1{
+          order: 1;
+        }
+      }
+    }
+  }
+}

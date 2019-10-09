@@ -1,0 +1,13 @@
+.t-hp{
+  .o-header{
+    .a-logo{
+      display: none;
+    }
+  }
+
+  @media (max-width: $screen-sm - 1) and (orientation: portrait){
+    .footer-top{
+      margin-top: 0;
+    }
+  }
+}

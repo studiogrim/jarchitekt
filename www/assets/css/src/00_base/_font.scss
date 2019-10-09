@@ -1,0 +1,18 @@
+@import "font-awesome/font-awesome";
+
+@font-face {
+  font-family: 'Fenomen Sans Thin';
+  src: url("../font/Fenomen Sans Thin.woff");
+  src: url("../font/Fenomen Sans Thin.woff") format("woff"),
+  url("../font/Fenomen Sans Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Fenomen Sans Book';
+  src: url("../font/Fenomen Sans Book.woff");
+  src: url("../font/Fenomen Sans Book.woff") format("woff"),
+  url("../font/Fenomen Sans Book.otf") format("opentype");
+}
+
+#mfPreviewBar, #mfPreviewBarShow{
+  display: none !important;
+}
